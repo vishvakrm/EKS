@@ -8,7 +8,7 @@ resource "aws_security_group_rule" "all_worker_mgmt_ingress" {
   from_port         = 0
   protocol          = "-1"
   to_port           = 0
-  security_group_id = aws_security_group.vis-demo
+  security_group_id = aws_security_group.vis-demo.id
   type              = "ingress"
   cidr_blocks = [
     "10.0.0.0/8",
