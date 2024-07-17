@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 locals {
-  cluster_name ="vis-eks-${random_string.suffix.results}"
+  cluster_name ="vis-eks-${random_string.suffix.result}"
 }
 resource "random_string" "suffix" {
   length = 8
